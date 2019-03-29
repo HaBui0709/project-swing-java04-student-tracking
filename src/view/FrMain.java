@@ -32,6 +32,7 @@ public class FrMain extends javax.swing.JFrame {
         menus.add(new MenuDto(MenuEnum.HOMEPAGE, pnHome, lbHome));
         menus.add(new MenuDto(MenuEnum.STUDENT, pnStudent, lbStudent));
         menus.add(new MenuDto(MenuEnum.COURSE, pnCourse, lbCourse));
+        menus.add(new MenuDto(MenuEnum.COURSE, pnCourse, lbCourse));
         
         
         navigator.setEvents(menus);
