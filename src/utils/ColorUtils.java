@@ -12,6 +12,6 @@ import java.awt.Color;
  * @author KimAnh
  */
 public class ColorUtils {
-    public static final Color NORMAL_COLOR = new Color(91, 400, 100);
-    public static final Color HOVER_COLOR = new Color(20, 42, 0);
+    public static final Color NORMAL_COLOR = new Color(76, 175, 80);
+    public static final Color HOVER_COLOR = new Color(91, 100, 191);
 }

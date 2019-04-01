@@ -32,7 +32,7 @@ public class pnStudent extends javax.swing.JPanel {
 
         jLabel1.setText("jLabel1");
 
-        jLabel2.setText("Homepage");
+        jLabel2.setText("Student");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -41,7 +41,7 @@ public class pnStudent extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(118, 118, 118)
                 .addComponent(jLabel2)
-                .addContainerGap(231, Short.MAX_VALUE))
+                .addContainerGap(244, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

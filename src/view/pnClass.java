@@ -9,12 +9,12 @@ package view;
  *
  * @author KimAnh
  */
-public class pnCourse extends javax.swing.JPanel {
+public class pnClass extends javax.swing.JPanel {
 
     /**
      * Creates new form pnHomePage
      */
-    public pnCourse() {
+    public pnClass() {
         initComponents();
     }
 
@@ -32,7 +32,7 @@ public class pnCourse extends javax.swing.JPanel {
 
         jLabel1.setText("jLabel1");
 
-        jLabel2.setText("Course");
+        jLabel2.setText("Class");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -41,7 +41,7 @@ public class pnCourse extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(118, 118, 118)
                 .addComponent(jLabel2)
-                .addContainerGap(248, Short.MAX_VALUE))
+                .addContainerGap(257, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
