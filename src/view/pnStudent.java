@@ -5,6 +5,8 @@
  */
 package view;
 
+import controller.StudentController;
+
 /**
  *
  * @author KimAnh
@@ -16,6 +18,8 @@ public class pnStudent extends javax.swing.JPanel {
      */
     public pnStudent() {
         initComponents();
+        StudentController studentController = new StudentController(tbStudent);
+        studentController.createTable();
     }
 
     /**
@@ -27,34 +31,81 @@ public class pnStudent extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        pnTop = new javax.swing.JPanel();
+        tfSearch = new javax.swing.JTextField();
+        pnAddnew = new javax.swing.JButton();
+        pnExport = new javax.swing.JButton();
+        scStudent = new javax.swing.JScrollPane();
+        tbStudent = new javax.swing.JTable();
 
-        jLabel1.setText("jLabel1");
+        setLayout(new java.awt.BorderLayout());
 
-        jLabel2.setText("Student");
+        pnTop.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(118, 118, 118)
-                .addComponent(jLabel2)
-                .addContainerGap(244, Short.MAX_VALUE))
+        tfSearch.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
+
+        pnAddnew.setBackground(new java.awt.Color(76, 175, 80));
+        pnAddnew.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        pnAddnew.setForeground(new java.awt.Color(255, 255, 255));
+        pnAddnew.setText("+ Thêm mới");
+
+        pnExport.setBackground(new java.awt.Color(76, 175, 80));
+        pnExport.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        pnExport.setForeground(new java.awt.Color(255, 255, 255));
+        pnExport.setText("Xuất báo cáo");
+
+        javax.swing.GroupLayout pnTopLayout = new javax.swing.GroupLayout(pnTop);
+        pnTop.setLayout(pnTopLayout);
+        pnTopLayout.setHorizontalGroup(
+            pnTopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnTopLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(tfSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 185, Short.MAX_VALUE)
+                .addComponent(pnExport)
+                .addGap(28, 28, 28)
+                .addComponent(pnAddnew)
+                .addContainerGap())
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(149, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(137, 137, 137))
+        pnTopLayout.setVerticalGroup(
+            pnTopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnTopLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnTopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnTopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(pnAddnew)
+                        .addComponent(pnExport))
+                    .addComponent(tfSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        pnTopLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {pnAddnew, pnExport, tfSearch});
+
+        add(pnTop, java.awt.BorderLayout.PAGE_START);
+
+        tbStudent.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        scStudent.setViewportView(tbStudent);
+
+        add(scStudent, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton pnAddnew;
+    private javax.swing.JButton pnExport;
+    private javax.swing.JPanel pnTop;
+    private javax.swing.JScrollPane scStudent;
+    private javax.swing.JTable tbStudent;
+    private javax.swing.JTextField tfSearch;
     // End of variables declaration//GEN-END:variables
 }

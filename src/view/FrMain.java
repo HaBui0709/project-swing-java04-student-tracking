@@ -11,6 +11,7 @@ import dto.MenuDto;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 
 /**
  *
@@ -23,6 +24,8 @@ public class FrMain extends javax.swing.JFrame {
      */
     public FrMain() {
         initComponents();
+        
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         lbLogo.setIcon(new ImageIcon(getClass().getResource("/images/icon_logo_bkcit.png")));
         
         
@@ -154,7 +157,7 @@ public class FrMain extends javax.swing.JFrame {
 
         pnLeft.add(pnLogo, java.awt.BorderLayout.SOUTH);
 
-        getContentPane().add(pnLeft, java.awt.BorderLayout.LINE_START);
+        getContentPane().add(pnLeft, java.awt.BorderLayout.WEST);
         getContentPane().add(pnMainView, java.awt.BorderLayout.CENTER);
 
         pack();

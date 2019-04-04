@@ -27,34 +27,148 @@ public class pnHomePage extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        pnCourseHint = new javax.swing.JPanel();
+        lbCourseIcon = new javax.swing.JLabel();
+        lbCourseHint = new javax.swing.JLabel();
+        lbCourseQty = new javax.swing.JLabel();
+        pnStudentHint = new javax.swing.JPanel();
+        lbStudentIcon = new javax.swing.JLabel();
+        lbStudentHint = new javax.swing.JLabel();
+        lbStudentQty = new javax.swing.JLabel();
+        pnMailboxHint = new javax.swing.JPanel();
+        lbMailboxIcon = new javax.swing.JLabel();
+        lbMailboxHint = new javax.swing.JLabel();
+        lbMailboxQty = new javax.swing.JLabel();
 
-        jLabel1.setText("jLabel1");
+        java.awt.FlowLayout flowLayout1 = new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 20, 5);
+        flowLayout1.setAlignOnBaseline(true);
+        setLayout(flowLayout1);
 
-        jLabel2.setText("Homepage");
+        pnCourseHint.setBackground(new java.awt.Color(255, 0, 0));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(118, 118, 118)
-                .addComponent(jLabel2)
-                .addContainerGap(231, Short.MAX_VALUE))
+        lbCourseIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon_trangchu1_white_24dp.png"))); // NOI18N
+
+        lbCourseHint.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lbCourseHint.setText("Khóa học");
+
+        lbCourseQty.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lbCourseQty.setText("100");
+
+        javax.swing.GroupLayout pnCourseHintLayout = new javax.swing.GroupLayout(pnCourseHint);
+        pnCourseHint.setLayout(pnCourseHintLayout);
+        pnCourseHintLayout.setHorizontalGroup(
+            pnCourseHintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnCourseHintLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lbCourseIcon)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addGroup(pnCourseHintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(lbCourseQty)
+                    .addComponent(lbCourseHint))
+                .addGap(32, 32, 32))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(149, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(137, 137, 137))
+        pnCourseHintLayout.setVerticalGroup(
+            pnCourseHintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnCourseHintLayout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addComponent(lbCourseQty)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addGroup(pnCourseHintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(lbCourseHint)
+                    .addComponent(lbCourseIcon))
+                .addContainerGap())
         );
+
+        add(pnCourseHint);
+
+        pnStudentHint.setBackground(new java.awt.Color(0, 204, 204));
+
+        lbStudentIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon_trangchu2_white_24dp.png"))); // NOI18N
+
+        lbStudentHint.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lbStudentHint.setText("Học viên");
+
+        lbStudentQty.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lbStudentQty.setText("100");
+
+        javax.swing.GroupLayout pnStudentHintLayout = new javax.swing.GroupLayout(pnStudentHint);
+        pnStudentHint.setLayout(pnStudentHintLayout);
+        pnStudentHintLayout.setHorizontalGroup(
+            pnStudentHintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnStudentHintLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lbStudentIcon)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                .addGroup(pnStudentHintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(lbStudentQty)
+                    .addComponent(lbStudentHint))
+                .addGap(32, 32, 32))
+        );
+        pnStudentHintLayout.setVerticalGroup(
+            pnStudentHintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnStudentHintLayout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addComponent(lbStudentQty)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addGroup(pnStudentHintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(lbStudentHint)
+                    .addComponent(lbStudentIcon))
+                .addContainerGap())
+        );
+
+        add(pnStudentHint);
+
+        pnMailboxHint.setBackground(new java.awt.Color(153, 255, 0));
+
+        lbMailboxIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon_trangchu3_white_24dp.png"))); // NOI18N
+
+        lbMailboxHint.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lbMailboxHint.setText("Hộp thư");
+
+        lbMailboxQty.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lbMailboxQty.setText("100");
+
+        javax.swing.GroupLayout pnMailboxHintLayout = new javax.swing.GroupLayout(pnMailboxHint);
+        pnMailboxHint.setLayout(pnMailboxHintLayout);
+        pnMailboxHintLayout.setHorizontalGroup(
+            pnMailboxHintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnMailboxHintLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lbMailboxIcon)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
+                .addGroup(pnMailboxHintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(lbMailboxQty)
+                    .addComponent(lbMailboxHint))
+                .addGap(32, 32, 32))
+        );
+        pnMailboxHintLayout.setVerticalGroup(
+            pnMailboxHintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnMailboxHintLayout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addComponent(lbMailboxQty)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addGroup(pnMailboxHintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(lbMailboxHint)
+                    .addComponent(lbMailboxIcon))
+                .addContainerGap())
+        );
+
+        add(pnMailboxHint);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel lbCourseHint;
+    private javax.swing.JLabel lbCourseIcon;
+    private javax.swing.JLabel lbCourseQty;
+    private javax.swing.JLabel lbMailboxHint;
+    private javax.swing.JLabel lbMailboxIcon;
+    private javax.swing.JLabel lbMailboxQty;
+    private javax.swing.JLabel lbStudentHint;
+    private javax.swing.JLabel lbStudentIcon;
+    private javax.swing.JLabel lbStudentQty;
+    private javax.swing.JPanel pnCourseHint;
+    private javax.swing.JPanel pnMailboxHint;
+    private javax.swing.JPanel pnStudentHint;
     // End of variables declaration//GEN-END:variables
 }

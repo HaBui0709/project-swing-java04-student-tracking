@@ -36,12 +36,12 @@ public class Navigator {
     }
 
     public void setStartPage(JPanel pnHomePage) {
+        this.pnMainView.setLayout(new BorderLayout());
         this.pnMainView.add(pnHomePage);
     }
 
     public void setEvents() {
         menus.forEach(menu -> menu.getLabel().addMouseListener(new LabelMenuListener(menu)));
-
     }
 
     class LabelMenuListener extends MouseAdapter {
@@ -69,7 +69,7 @@ public class Navigator {
 
             // set page for each menu tab
             pnMainView.removeAll();
-             
+            pnMainView.setLayout(new BorderLayout());
             switch (name) {
                 case HOMEPAGE:
                     pnMainView.add(new pnHomePage());
@@ -78,10 +78,10 @@ public class Navigator {
                     pnMainView.add(new pnStudent());
                     break;
                 case CLASS:
-                    pnMainView.add(new pnClass());
+                    pnMainView.add(new pnClass(), BorderLayout.CENTER);
                     break;
                 case COURSE:
-                    pnMainView.add(new pnCourse());
+                    pnMainView.add(new pnCourse(), BorderLayout.CENTER);
                     break;
                 case STATISTIC:
                     pnMainView.add(new pnStatistic());
