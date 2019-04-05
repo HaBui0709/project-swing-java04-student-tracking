@@ -13,7 +13,7 @@ import java.sql.SQLException;
  *
  * @author KimAnh
  */
-public class DBConnection {
+public class DBConnectionLibs {
     public static Connection getMySQLConnection(String hostName, String dbName,
          String userName, String password) throws SQLException,
          ClassNotFoundException {

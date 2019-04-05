@@ -17,7 +17,7 @@ import java.time.Month;
 import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
-import libs.DBConnection;
+import libs.DBConnectionLibs;
 import utils.DBConnectionUtils;
 
 /**
@@ -27,7 +27,7 @@ import utils.DBConnectionUtils;
 public class StudentDao {
     public List<Student> getStudents() throws SQLException, ClassNotFoundException{
         List<Student> students = new ArrayList<>();
-        Connection conn = DBConnection.getMySQLConnection(DBConnectionUtils.HOST_NAME, 
+        Connection conn = DBConnectionLibs.getMySQLConnection(DBConnectionUtils.HOST_NAME, 
                 DBConnectionUtils.DB_NAME, DBConnectionUtils.USERNAME, DBConnectionUtils.PASSWORD);
         Statement st = conn.createStatement();
         ResultSet rs = st.executeQuery(DBConnectionUtils.SQL_QUERY);
