@@ -19,13 +19,14 @@ import service.StudentService;
  * @author KimAnh
  */
 public class StudentController {
-	// hello I'm habui
+	// hello I'm habui, 
     private final JTable tbStudent;
 
+// constructor
     public StudentController(JTable tbStudent) {
         this.tbStudent = tbStudent;
     }
-
+	
     public List<Student> getStudents() {
         try {
             return new StudentService().getStudents();
