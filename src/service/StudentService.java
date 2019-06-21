@@ -16,7 +16,8 @@ import java.util.logging.Logger;
  *
  * @author KimAnh
  */
-public class StudentService {
+/usr/bin/bash: q: command not found
+	// hello I'm habui
     private StudentDao studentDao = new StudentDao();
     public List<Student> getStudents() throws SQLException, ClassNotFoundException{
         return studentDao.getStudents();
