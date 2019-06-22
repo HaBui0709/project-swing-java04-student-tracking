@@ -22,11 +22,11 @@ import view.pnStudent;
 
 /**
  *
- * @author KimAnh
+ * @author hbui
  */
 public class Navigator {
 
-    private JPanel pnMainView;
+    public JPanel pnMainView;
     private List<MenuDto> menus;
     private JPanel curPanel;
 
