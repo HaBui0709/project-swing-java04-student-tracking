@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Account {
 	// this is account class
-	private int id;
+	public int id;
 	private String fullName;
 	private String phoneNumber;
 	public int getId() {
