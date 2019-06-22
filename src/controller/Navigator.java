@@ -22,7 +22,7 @@ import view.pnStudent;
 
 /**
  *
- * @author KimAnh
+ * @author hbui
  */
 public class Navigator {
 
