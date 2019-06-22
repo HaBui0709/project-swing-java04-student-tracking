@@ -3,8 +3,7 @@ package compares;
 import java.util.Objects;
 
 public class Account {
-	// this is account class
-	public int id;
+	protected int id;
 	private String fullName;
 	private String phoneNumber;
 	public int getId() {
